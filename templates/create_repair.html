@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1>Слздание новой заявки на ремонт</h1>
+    <hr>
+    <form action="{% url 'repairs:create' %}" method="POST">
+        {{ form }}
+        {% csrf_token %}
+        <input type="submit" class="btn btn-success" value="Создать">
+    </form>
+
+{% endblock %}

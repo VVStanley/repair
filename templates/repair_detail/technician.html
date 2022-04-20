@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1>Обработка заявки техником</h1>
+    <hr>
+    {% include 'repair_detail/repair.html' with repair=repair %}
+    <hr>
+    <form action="{% url 'repairs:detail' repair.id %}" method="POST">
+        {{ form }}
+        {% csrf_token %}
+        <input type="submit" class="btn btn-success" value="Сохранить">
+    </form>
+
+{% endblock %}

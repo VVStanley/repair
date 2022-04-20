@@ -1,0 +1,8 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1>Просмотр информации по заявке клиентом</h1>
+    <hr>
+    {% include 'repair_detail/repair.html' with repair=repair %}
+
+{% endblock %}
