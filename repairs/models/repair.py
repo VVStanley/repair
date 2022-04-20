@@ -20,7 +20,7 @@ statuses_technician = [
 ]
 statuses_master = [
     item for item in Status.choices if item[0] in (
-        'READY_TO_WORK', 'TESTS', 'RE_REPAIR'
+        'READY_TO_WORK', 'TESTS', 'RE_REPAIR', 'VERIFICATION'
     )
 ]
 statuses_worker = [

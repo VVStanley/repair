@@ -10,7 +10,7 @@
         <form action="{% url 'repairs:detail' repair.id %}" method="POST">
             {{ form }}
         {% csrf_token %}
-        <input type="submit" class="btn btn-success" value="Ремонт выполнен">
+        <input type="submit" class="btn btn-success" value="Сохранить">
     </form>
     </div>
     </div>
