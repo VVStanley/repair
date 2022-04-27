@@ -1,6 +1,6 @@
-from django.shortcuts import render, get_object_or_404, redirect
+from django.shortcuts import get_object_or_404, redirect, render
 from django.views import View
-from django.views.generic import ListView, FormView
+from django.views.generic import FormView, ListView
 
 from repairs.forms.customer import CustomerForm
 from repairs.forms.master import MasterForm
